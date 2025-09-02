@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import { twMerge } from "tailwind-merge";
 import { useHoriScroll } from "./useHoriScroll";
 
 export default function HoriScroll() {
