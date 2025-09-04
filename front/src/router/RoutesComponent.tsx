@@ -1,6 +1,7 @@
 import { Link, Route, Routes } from "react-router-dom";
 import "./navbar.css";
 import AnimationForm from "../view/Demo/AnimationForm";
+import AnimationSVG from "../view/Demo/AnimationSVG";
 import Errwords from "../view/Demo/Errwords";
 import HoriScroll from "../view/Demo/HoriScroll";
 import InfiScroll from "../view/Demo/InfiScroll";
@@ -24,6 +25,7 @@ export function RoutesComponent() {
 				<Route path="hori-scroll" element={<HoriScroll />} />
 				<Route path="infi-scroll" element={<InfiScroll />} />
 				<Route path="animation-form" element={<AnimationForm />} />
+				<Route path="animation-svg" element={<AnimationSVG />} />
 			</Route>
 			<Route path="/question" element={<Question />} />
 			<Route path="/errorwords" element={<Errwords />} />
@@ -49,24 +51,27 @@ export function RoutesNavbar() {
 			</li>
 			<li className="relative group flex-2 text-center">
 				Demo
-				<ul className="pointer-events-none group-hover:pointer-events-auto absolute top-full group-hover:opacity-100  opacity-0 transition-opacity duration-300 text-amber-600 left-1/2 -translate-x-1/2  ">
+				<ul className="w-full pointer-events-none group-hover:pointer-events-auto absolute top-full group-hover:opacity-100  opacity-0 transition-opacity duration-300 text-amber-600 left-1/2 -translate-x-1/2  ">
 					<li>
-						<Link to="/demo/pokers">扑克</Link>
+						<Link to="/demo/pokers">扑克轮播</Link>
 					</li>
 					<li>
-						<Link to="/demo/errorwords">异常</Link>
+						<Link to="/demo/errorwords">异常文字</Link>
 					</li>
 					<li>
-						<Link to="/demo/spider">蜘蛛</Link>
+						<Link to="/demo/spider">蜘蛛爬行</Link>
 					</li>
 					<li>
-						<Link to="/demo/hori-scroll">水平</Link>
+						<Link to="/demo/hori-scroll">水平滚动</Link>
 					</li>
 					<li>
-						<Link to="/demo/infi-scroll">无限</Link>
+						<Link to="/demo/infi-scroll">无限滚动</Link>
 					</li>
 					<li>
-						<Link to="/demo/animation-form">表单</Link>
+						<Link to="/demo/animation-form">动画表单</Link>
+					</li>
+					<li>
+						<Link to="/demo/animation-svg">SVG动画</Link>
 					</li>
 				</ul>
 			</li>

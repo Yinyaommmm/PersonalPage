@@ -178,11 +178,11 @@ export default function AnimationForm() {
 					</div>
 				))}
 			</div>
-			<div className="absolute overflow-hidden z-0" ref={hand}>
+			<div className="absolute overflow-hidden z-0 w-max" ref={hand}>
 				<img
 					src="/animation_form/hand.png"
 					alt="hand_picture"
-					className="h-full object-cover object-left-top"
+					className="h-full object-cover object-left-top "
 				/>
 			</div>
 		</div>

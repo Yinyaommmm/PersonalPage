@@ -1,0 +1,70 @@
+.animatedCircle {
+	fill: #b20426;
+	animation: colorBlink 2s infinite alternate ease;
+}
+
+@keyframes colorBlink {
+	0% {
+		fill: #17f700;
+	}
+
+	30% {
+		fill: #b20426;
+	}
+	80% {
+		fill: #b20426;
+	}
+	100% {
+		fill: #17f700;
+	}
+}
+.st1 {
+	fill: none;
+	stroke: #17f700;
+	stroke-width: 10.6454;
+	stroke-linecap: round;
+	stroke-miterlimit: 10;
+	stroke-dasharray: 100 20;
+	stroke-dashoffset: 0;
+	animation: charging 2s infinite ease;
+}
+
+@keyframes charging {
+	to {
+		stroke-dashoffset: -240;
+	}
+}
+
+.animatedForearm {
+	animation: rotateForearm 2s ease infinite;
+	transform-origin: 159.7px 575.7px; /*因为它是svg元素，所以不同于HTML，这个px被视作坐标系里的数值*/
+}
+
+@keyframes rotateForearm {
+	0% {
+		transform: rotate(-10deg);
+	}
+	30% {
+		transform: rotate(40deg);
+	}
+	100% {
+		transform: rotate(-10deg);
+	}
+}
+
+.animatedHand {
+	animation: rotateHand 2s ease infinite;
+	transform-origin: 395.7px 407.6px; /*因为它是svg元素，所以不同于HTML，这个px被视作坐标系里的数值*/
+}
+
+@keyframes rotateHand {
+	0% {
+		transform: rotate(-30deg);
+	}
+	30% {
+		transform: rotate(20deg);
+	}
+	100% {
+		transform: rotate(-30deg);
+	}
+}
