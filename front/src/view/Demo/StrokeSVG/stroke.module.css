@@ -1,0 +1,37 @@
+.strokeSvgCircle {
+    stroke-dasharray: 350 ;
+    animation: strokeCircle 2s linear alternate infinite;
+}
+.strokeSvgCircleReverse {
+    stroke-dasharray: 350 ;
+    animation: strokeCircleReverse 2s linear alternate infinite;
+}
+@keyframes strokeCircle {
+    from {
+      stroke-dashoffset:350 ;
+    }
+    to {
+      stroke-dashoffset:0 ;
+    }
+}
+@keyframes strokeCircleReverse {
+    from {
+      stroke-dashoffset:175 ;
+    }
+    to {
+      stroke-dashoffset:0 ;
+    }
+}
+
+.strokeSvgLine {
+    stroke-dasharray: 150 ;
+    animation: strokeLine 2s linear alternate infinite;
+}
+@keyframes strokeLine {
+    from {
+      stroke-dashoffset:150 ;
+    }
+    to {
+      stroke-dashoffset:0 ;
+    }
+}
