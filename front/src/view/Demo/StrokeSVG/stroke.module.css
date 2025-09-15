@@ -1,37 +1,26 @@
 .strokeSvgCircle {
-    stroke-dasharray: 350 ;
-    animation: strokeCircle 2s linear alternate infinite;
+	--radius: 49;
+	--circumstance: calc(2 * 3.14 * var(--radius));
+	stroke-dasharray: var(--circumstance);
+	stroke-dashoffset: var(--circumstance);
+	animation: strokeCircle 2s ease alternate infinite;
 }
-.strokeSvgCircleReverse {
-    stroke-dasharray: 350 ;
-    animation: strokeCircleReverse 2s linear alternate infinite;
-}
+
 @keyframes strokeCircle {
-    from {
-      stroke-dashoffset:350 ;
-    }
-    to {
-      stroke-dashoffset:0 ;
-    }
-}
-@keyframes strokeCircleReverse {
-    from {
-      stroke-dashoffset:175 ;
-    }
-    to {
-      stroke-dashoffset:0 ;
-    }
+	to {
+		stroke-dashoffset: 0;
+	}
 }
 
 .strokeSvgLine {
-    stroke-dasharray: 150 ;
-    animation: strokeLine 2s linear alternate infinite;
+	stroke-dasharray: 150;
+	animation: strokeLine 2s ease alternate infinite;
 }
 @keyframes strokeLine {
-    from {
-      stroke-dashoffset:150 ;
-    }
-    to {
-      stroke-dashoffset:0 ;
-    }
+	from {
+		stroke-dashoffset: 150;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
 }
