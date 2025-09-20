@@ -1,0 +1,26 @@
+.strokeSvgCircle {
+	--radius: 49;
+	--circumstance: calc(2 * 3.14 * var(--radius));
+	stroke-dasharray: var(--circumstance);
+	stroke-dashoffset: var(--circumstance);
+	animation: strokeCircle 2s ease alternate infinite;
+}
+
+@keyframes strokeCircle {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+.strokeSvgLine {
+	stroke-dasharray: 150;
+	animation: strokeLine 2s ease alternate infinite;
+}
+@keyframes strokeLine {
+	from {
+		stroke-dashoffset: 150;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+}

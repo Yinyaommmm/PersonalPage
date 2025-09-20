@@ -8,6 +8,7 @@ import HoriScroll from "../view/Demo/HoriScroll";
 import InfiScroll from "../view/Demo/InfiScroll";
 import { Pokers } from "../view/Demo/Poker";
 import Spider from "../view/Demo/Spider";
+import StrokeSVG from "../view/Demo/StrokeSVG";
 import ErrorPage from "../view/ErrorPage";
 import Home from "../view/Home";
 import Notes from "../view/Notes";
@@ -27,6 +28,7 @@ export function RoutesComponent() {
 				<Route path="infi-scroll" element={<InfiScroll />} />
 				<Route path="animation-form" element={<AnimationForm />} />
 				<Route path="animation-svg" element={<AnimationSVG />} />
+				<Route path="stroke-svg" element={<StrokeSVG />} />
 				<Route path="honeycomb" element={<HoneyComb />} />
 			</Route>
 			<Route path="/question" element={<Question />} />
@@ -74,6 +76,9 @@ export function RoutesNavbar() {
 					</li>
 					<li>
 						<Link to="/demo/animation-svg">SVG动画</Link>
+					</li>
+					<li>
+						<Link to="/demo/stroke-svg">SVG描边</Link>
 					</li>
 					<li>
 						<Link to="/demo/honeycomb">蜂窝动画</Link>
